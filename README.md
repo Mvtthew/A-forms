@@ -45,6 +45,12 @@ Simple and clean CSS library to create modern and clean forms on your website!
 </label>
 ```
 
+#### Send form button
+
+```
+<input type="submit" class="a-submit" value="SAVE">
+```
+
 ## TODO:
 
 What's need to be styled
