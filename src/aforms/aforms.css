@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+.a-form {
+  font-family: "Roboto";
+  /* 
+    Form header */
+  /* 
+    Checkbox */
+  /* 
+    Submit button */
+}
+
+.a-form .a-header {
+  margin-bottom: 1.7rem;
+}
+
+.a-form .a-header h1 {
+  margin-bottom: 0;
+}
+
+.a-form .a-header p {
+  margin-bottom: 0.3rem;
+}
+
+.a-form .a-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.a-form .a-checkbox .label {
+  padding-right: .3rem;
+}
+
+.a-form .a-checkbox input[type="checkbox"] {
+  opacity: 0;
+  display: none;
+}
+
+.a-form .a-checkbox .check {
+  display: block;
+  width: 40px;
+  height: 20px;
+  border: 1px solid #010101;
+  background: #ffffff;
+  border-radius: 40px;
+  position: relative;
+}
+
+.a-form .a-checkbox .check::before {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  content: '';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: #616161;
+}
+
+.a-form .a-checkbox input[type="checkbox"]:checked ~ .check::before {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+  background: #000;
+}
+
+.a-form .a-submit {
+  border: 1px solid #000;
+  background: none;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+/*# sourceMappingURL=aforms.css.map */
