@@ -1,4 +1,4 @@
-![Preview of a-forms by Mateusz Ożóg]()
+![Preview of a-forms by Mateusz Ożóg](https://raw.githubusercontent.com/Azurixa/A-forms/master/preview.png)
 
 # A-forms | CSS library to make beautiful custom forms
 
