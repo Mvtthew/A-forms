@@ -1,0 +1,87 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #8585858e;
+}
+
+.show-box {
+    width: 20%;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.a-form {
+    /* 
+    Form header */
+    .a-header {
+        margin-bottom: 1.7rem;
+        h1 {
+            margin-bottom: 0;
+        }
+        p {
+            margin-bottom: 0.3rem;
+        }
+    }
+    /* 
+    Checkbox */
+    .a-checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.2rem;
+        .label {
+            padding-right: .3rem;
+        }
+        input[type="checkbox"] {
+            opacity: 0;
+            display: none;
+        }
+        .check {
+            display: block;
+            width: 40px;
+            height: 20px;
+            border: 1px solid #010101;
+            background: #ffffff;
+            border-radius: 40px;
+            position: relative;
+            &::before {
+                // Unchecked dot style
+                transition: 0.3s all;
+                content: '';
+                box-sizing: border-box;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border: 2px solid #ffffff;
+                border-radius: 50%;
+                background: #616161;
+            }
+        }
+        input[type="checkbox"]:checked~.check::before {
+            // Checked dot style
+            transform: translateX(20px);
+            background: #000;
+        }
+    }
+    /* 
+    Submit button */
+    .a-submit {
+        border: 1px solid #000;
+        background: none;
+        padding: 0.5rem 1.2rem;
+        cursor: pointer;
+        font-size: 14px;
+        border-radius: 4px;
+        margin-top: 0.5rem;
+    }
+}
